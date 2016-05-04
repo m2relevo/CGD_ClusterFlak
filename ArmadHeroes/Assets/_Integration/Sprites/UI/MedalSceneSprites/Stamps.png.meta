@@ -1,0 +1,306 @@
+fileFormatVersion: 2
+guid: affa4ff2a7348594897203b526bd59d8
+timeCreated: 1461851713
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Stamps_Classified
+    21300002: Stamps_Ready
+    21300004: Stamps_MIA
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Stamps_Classified
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 121
+        width: 318
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -159, y: 42.5}
+        - {x: -159, y: -42.5}
+        - {x: 159, y: -42.5}
+        - {x: 159, y: 42.5}
+      - - {x: -151, y: -32.5}
+        - {x: -148, y: 33.5}
+        - {x: 70, y: 32.5}
+        - {x: 145, y: -29.5}
+      - - {x: -135, y: 28.5}
+        - {x: -139, y: 17.5}
+        - {x: -139, y: -14.5}
+        - {x: -131, y: -25.5}
+        - {x: -122, y: -26.5}
+        - {x: -116, y: -26.5}
+        - {x: -109, y: -19.5}
+        - {x: -109, y: 22.5}
+        - {x: -114, y: 28.5}
+      - - {x: -101, y: 28.5}
+        - {x: -105, y: 24.5}
+        - {x: -105, y: -24.5}
+        - {x: -103, y: -26.5}
+        - {x: -81, y: -26.5}
+        - {x: -79, y: -25.5}
+        - {x: -79, y: -2.5}
+        - {x: -95, y: 28.5}
+      - - {x: -56, y: 28.5}
+        - {x: -65, y: 28.5}
+        - {x: -68, y: 19.5}
+        - {x: -74, y: 2.5}
+        - {x: -74, y: -26.5}
+        - {x: -44, y: -26.5}
+        - {x: -44, y: -16.5}
+        - {x: -54, y: 26.5}
+      - - {x: -20, y: 28.5}
+        - {x: -33, y: 28.5}
+        - {x: -40, y: 19.5}
+        - {x: -40, y: 16.5}
+        - {x: -39, y: 1.5}
+        - {x: -31, y: -4.5}
+        - {x: -37, y: -4.5}
+        - {x: -40, y: -6.5}
+        - {x: -40, y: -19.5}
+        - {x: -33, y: -26.5}
+        - {x: -20, y: -26.5}
+        - {x: -13, y: -18.5}
+        - {x: -13, y: 20.5}
+      - - {x: 10, y: 7.5}
+        - {x: 8, y: 9.5}
+        - {x: 11, y: 7.5}
+        - {x: 18, y: 7.5}
+        - {x: 19, y: 10.5}
+        - {x: 19, y: 26.5}
+        - {x: 13, y: 28.5}
+        - {x: -3, y: 28.5}
+        - {x: -8, y: 20.5}
+        - {x: -8, y: 8.5}
+        - {x: -5, y: -1.5}
+        - {x: 0, y: -3.5}
+        - {x: 5, y: -4.5}
+        - {x: 7, y: -7.5}
+        - {x: 7, y: -18.5}
+        - {x: 7, y: -14.5}
+        - {x: 1, y: -4.5}
+        - {x: -6, y: -4.5}
+        - {x: -8, y: -5.5}
+        - {x: -8, y: -15.5}
+        - {x: -5, y: -21.5}
+        - {x: 1, y: -26.5}
+        - {x: 10, y: -26.5}
+        - {x: 19, y: -20.5}
+        - {x: 19, y: 2.5}
+        - {x: 13, y: 7.5}
+      - - {x: 23, y: 29.5}
+        - {x: 23, y: -22.5}
+        - {x: 25, y: -26.5}
+        - {x: 34, y: -26.5}
+        - {x: 34, y: 27.5}
+        - {x: 33, y: 29.5}
+      - - {x: 69, y: 29.5}
+        - {x: 69, y: -24.5}
+        - {x: 72, y: -26.5}
+        - {x: 78, y: -26.5}
+        - {x: 80, y: -24.5}
+        - {x: 80, y: 29.5}
+      - - {x: 84, y: 28.5}
+        - {x: 84, y: -26.5}
+        - {x: 109, y: -26.5}
+        - {x: 109, y: 26.5}
+        - {x: 108, y: 28.5}
+      - - {x: 114, y: 29.5}
+        - {x: 114, y: -25.5}
+        - {x: 115, y: -26.5}
+        - {x: 135, y: -26.5}
+        - {x: 140, y: -18.5}
+        - {x: 140, y: 26.5}
+        - {x: 134, y: 29.5}
+      - - {x: 61, y: 10.5}
+        - {x: 64, y: 14.5}
+        - {x: 64, y: 28.5}
+        - {x: 47, y: 28.5}
+        - {x: 39, y: 26.5}
+        - {x: 39, y: -25.5}
+        - {x: 50, y: -25.5}
+        - {x: 63, y: -5.5}
+        - {x: 64, y: 5.5}
+        - {x: 64, y: 7.5}
+    - name: Stamps_Ready
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 126
+        width: 174
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 40}
+        - {x: 18, y: 38}
+        - {x: 20, y: 31}
+        - {x: 80, y: -33}
+        - {x: -57, y: 35}
+        - {x: -57, y: 37}
+        - {x: -56, y: 34}
+        - {x: -51, y: 33}
+        - {x: 16, y: 33}
+        - {x: 18, y: 35}
+        - {x: 18, y: 40}
+        - {x: -87, y: 40}
+        - {x: -87, y: -40}
+        - {x: 87, y: -40}
+        - {x: 87, y: 40}
+      - - {x: -75, y: 29}
+        - {x: -75, y: -27}
+        - {x: -48, y: -27}
+        - {x: -48, y: 27}
+        - {x: -49, y: 29}
+      - - {x: -44, y: 28}
+        - {x: -44, y: -24}
+        - {x: -40, y: -27}
+        - {x: -19, y: -27}
+        - {x: -19, y: 27}
+        - {x: -20, y: 28}
+      - - {x: 14, y: -27}
+        - {x: 15, y: -25}
+        - {x: 15, y: -3}
+        - {x: 6, y: 28}
+        - {x: -10, y: 28}
+        - {x: -14, y: 5}
+        - {x: -14, y: -24}
+        - {x: -13, y: -27}
+        - {x: -9, y: -27}
+        - {x: -4, y: -22}
+        - {x: 2, y: -26}
+        - {x: 4, y: -27}
+      - - {x: 25, y: 29}
+        - {x: 20, y: 20}
+        - {x: 20, y: -27}
+        - {x: 40, y: -27}
+        - {x: 46, y: -20}
+        - {x: 46, y: 27}
+        - {x: 41, y: 29}
+      - - {x: 51, y: 29}
+        - {x: 51, y: -27}
+        - {x: 62, y: -27}
+        - {x: 65, y: -26}
+        - {x: 75, y: 18}
+        - {x: 75, y: 27}
+        - {x: 74, y: 29}
+    - name: Stamps_MIA
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 138
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 36}
+        - {x: -41, y: 12}
+        - {x: -49, y: 28}
+        - {x: -57, y: 28}
+        - {x: -60, y: 27}
+        - {x: -59, y: -26}
+        - {x: -57, y: -27}
+        - {x: -51, y: -27}
+        - {x: -49, y: -25}
+        - {x: -49, y: -5}
+        - {x: -47, y: -18}
+        - {x: -38, y: -25}
+        - {x: -30, y: -27}
+        - {x: -25, y: -27}
+        - {x: -22, y: -24}
+        - {x: 3, y: -27}
+        - {x: 7, y: -27}
+        - {x: 10, y: -26}
+        - {x: 54, y: -28}
+        - {x: -28, y: -27}
+        - {x: -61, y: -27}
+        - {x: -60, y: 28}
+        - {x: -44, y: 28}
+        - {x: -43, y: 27}
+        - {x: -33, y: 28}
+        - {x: -32, y: 30}
+        - {x: -31, y: 35}
+        - {x: -32, y: 36}
+        - {x: -69, y: 36}
+        - {x: -69, y: -36}
+        - {x: 69, y: -36}
+        - {x: 69, y: 36}
+      - - {x: -17, y: -13}
+        - {x: -17, y: -25}
+        - {x: -13, y: -27}
+        - {x: -8, y: -27}
+        - {x: -6, y: -26}
+        - {x: -6, y: -13}
+      - - {x: 14, y: -13}
+        - {x: 14, y: -26}
+        - {x: 16, y: -27}
+        - {x: 25, y: -27}
+        - {x: 25, y: -16}
+        - {x: 24, y: -13}
+      - - {x: 55, y: 14}
+        - {x: 48, y: 28}
+        - {x: 31, y: 28}
+        - {x: 29, y: 5}
+        - {x: 29, y: -27}
+        - {x: 37, y: -27}
+        - {x: 39, y: -26}
+        - {x: 46, y: -27}
+        - {x: 57, y: -27}
+        - {x: 58, y: -26}
+        - {x: 58, y: -7}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

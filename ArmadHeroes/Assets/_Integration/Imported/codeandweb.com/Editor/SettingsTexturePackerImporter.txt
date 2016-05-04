@@ -1,0 +1,50 @@
+version: 2
+importPivots: 1
+tpsheetFileNames:
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Resources/_Integration/Sprites/Armad/Raph_character_atlas.tpsheet
+- Assets/Resources/_Integration/Sprites/Armad/Cipher_character_atlas.tpsheet
+- Assets/ClusterFlak/Assets/RAW/armad_placeholder_atlas.tpsheet
+- Assets/_Integration/Sprites/SpriteSheets/Vehicles/apc_atlas.tpsheet
+- Assets/Resources/_Integration/Sprites/Armad/basic_character_atlas.tpsheet
+- Assets/_Integration/Sprites/SpriteSheets/Vehicles/apache_helicopter_atlas.tpsheet
+- Assets/_Integration/Sprites/Armad (Deprecated)/armad_placeholder_atlas.tpsheet
+- Assets/Resources/_Integration/Sprites/Armad/Slick_character_atlas.tpsheet
+- Assets/Resources/_Integration/Sprites/Armad/slick_character_atlas.tpsheet
+- Assets/ShellShock/Sprites/armad_placeholder_atlas.tpsheet
+- Assets/_Integration/Sprites/Armad (Deprecated)/basic_character_atlas.tpsheet
+- Assets/_Integration/Sprites/SpriteSheets/Vehicles/jetpack_atlas.tpsheet
+- Assets/Resources/_Integration/Sprites/Armad/Sarge_character_atlas.tpsheet
+- Assets/Resources/_Integration/Sprites/Armad/sarge_character_atlas.tpsheet
+textureFileNames:
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Resources/_Integration/Sprites/Armad/raf_character_atlas.png
+- Assets/Resources/_Integration/Sprites/Armad/specops_character_atlas.png
+- Assets/ClusterFlak/Assets/RAW/armad_placeholder_atlas.png
+- Assets/_Integration/Sprites/SpriteSheets/Vehicles/apc_atlas.png
+- Assets/Resources/_Integration/Sprites/Armad/basic_character_atlas.png
+- Assets/_Integration/Sprites/SpriteSheets/Vehicles/apache_helicopter_atlas.png
+- Assets/_Integration/Sprites/Armad (Deprecated)/armad_placeholder_atlas.png
+- Assets/Resources/_Integration/Sprites/Armad/slick_character_atlas.png
+- Assets/Resources/_Integration/Sprites/Armad/slick_character_atlas.png
+- Assets/ShellShock/Sprites/armad_placeholder_atlas.png
+- Assets/_Integration/Sprites/Armad (Deprecated)/basic_character_atlas.png
+- Assets/_Integration/Sprites/SpriteSheets/Vehicles/jetpack_atlas.png
+- Assets/Resources/_Integration/Sprites/Armad/sarge_character_atlas.png
+- Assets/Resources/_Integration/Sprites/Armad/sarge_character_atlas.png
+normalmapFileNames:
+- Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 

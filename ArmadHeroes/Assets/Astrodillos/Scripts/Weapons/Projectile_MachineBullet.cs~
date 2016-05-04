@@ -1,0 +1,44 @@
+﻿using UnityEngine;
+using System.Collections;
+
+namespace Astrodillos
+{
+    public class Projectile_MachineBullet : Projectile
+    {
+        TrailRenderer trail;
+        new protected virtual void Awake()
+        {
+            base.Awake();
+			projectileType = ProjectileType.MachineBullet;
+            projectileSpeed = 15.0f;
+           /// aliveTime = 2.0f;
+            trail = gameObject.GetComponent<TrailRenderer>();
+            trail.sortingLayerName = "Foreground";
+            trail.sortingOrder = 2;
+
+			damage = 0.05f;
+           
+        }
+
+        new protected virtual void Update()
+        {
+            base.Update();
+            Alive();
+            //Update rotation to face force direction
+            float rocketAngle = (Mathf.Rad2Deg * Mathf.Atan2(body.velocity.x, -body.velocity.y)) - 90;
+            transform.localEulerAngles = new Vector3(0, 0, rocketAngle);
+        }
+
+		protected override void HitObject(GameObject hitObject)
+		{
+			base.HitObject(hitObject);
+
+			Vector3 direction = hitObject.transform.position - transform.position;
+			direction.Normalize();
+			Vector3 explosionPos = transform.position + (direction * 0.25f);
+
+			Gametype_Astrodillos.instance.Explosion (explosionPos);
+
+		}
+    }
+}

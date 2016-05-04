@@ -1,0 +1,40 @@
+﻿//using UnityEngine;
+//using System.Collections;
+//#if UNITY_EDITOR
+//using UnityEditor;
+//
+//namespace Astrodillos
+//{
+//    [CustomEditor(typeof(MapCreator))]
+//    [CanEditMultipleObjects]
+//    public class MapCreatorEditor : Editor
+//    {
+//
+//        public override void OnInspectorGUI()
+//        {
+//
+//            MapCreator mc = (MapCreator)target;
+//
+//            if (GUILayout.Button("Create Ground"))
+//            {
+//
+//                mc.CreateGroundLevel();
+//            }
+//
+//            if (GUILayout.Button("Create Space"))
+//            {
+//
+//                mc.CreateSpaceLevel();
+//            }
+//
+//            if (GUILayout.Button("Clear Map"))
+//            {
+//
+//                mc.ClearMap();
+//            }
+//
+//        }
+//
+//    }
+//}
+//#endif

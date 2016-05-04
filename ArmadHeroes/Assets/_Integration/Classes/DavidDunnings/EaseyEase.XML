@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EaseyEase</name>
+    </assembly>
+    <members>
+        <member name="T:EaseyEase.EaseyTimer">
+            <summary>
+            Used to keep track of timings for an ease
+            </summary>
+        </member>
+        <member name="F:EaseyEase.EaseyTimer.startTime">
+            <summary>
+            Start time of the ease
+            </summary>
+        </member>
+        <member name="F:EaseyEase.EaseyTimer.duration">
+            <summary>
+            Duration of the ease
+            </summary>
+        </member>
+        <member name="F:EaseyEase.EaseyTimer.repeat">
+            <summary>
+            Does the ease repeat
+            </summary>
+        </member>
+        <member name="M:EaseyEase.EaseyTimer.#ctor(System.Single,System.Boolean)">
+            <summary>
+            Initializes a new EaseyTimer with the given duration
+            </summary>
+            <param name="_duration">Duration of the ease</param>
+            <param name="_repeat">Does the ease repeat</param>
+        </member>
+        <member name="M:EaseyEase.EaseyTimer.#ctor(System.Single,System.Single,System.Boolean)">
+            <summary>
+            Initializes a new EaseyTimer with the given duration, starting at the given time
+            </summary>
+            <param name="_startTime">Start time of the ease</param>
+            <param name="_duration">Duration of the ease</param>
+            <param name="_repeat">Does the ease repeat</param>
+        </member>
+        <member name="T:EaseyEase.Easey">
+            <summary>
+            Contains all easing functions [v1.2]
+            </summary>
+        </member>
+        <member name="T:EaseyEase.Easey.EaseType">
+            <summary>
+            The type of easing
+            </summary>
+        </member>
+        <member name="M:EaseyEase.Easey.Ease(EaseyEase.Easey.EaseType,System.Single,System.Single,EaseyEase.EaseyTimer)">
+            <summary>
+            Ease a float between two values
+            </summary>
+            <param name="_type">Ease type</param>
+            <param name="_a">First float</param>
+            <param name="_b">Second float</param>
+            <param name="_easeyTimer">EaseyTimer containing timing information</param>
+            <returns>Float between _a and _b, based on the time between the start and end (as defined by the given EaseyTimer), using the given ease type</returns>
+        </member>
+        <member name="M:EaseyEase.Easey.Ease(EaseyEase.Easey.EaseType,UnityEngine.Vector3,UnityEngine.Vector3,EaseyEase.EaseyTimer)">
+            <summary>
+            Ease a vector3 between two values
+            </summary>
+            <param name="_type">Ease type</param>
+            <param name="_a">First vector3</param>
+            <param name="_b">Second vector3</param>
+            <param name="_easeyTimer">EaseyTimer containing timing information</param>
+            <returns>Vector3 between _a and _b, based on the time between the start and end (as defined by the given EaseyTimer), using the given ease type</returns>
+        </member>
+        <member name="M:EaseyEase.Easey.Ease(EaseyEase.Easey.EaseType,System.Single,System.Single,System.Single)">
+            <summary>
+            Ease a float between two values
+            </summary>
+            <param name="_type">Ease type</param>
+            <param name="_a">First float</param>
+            <param name="_b">Second float</param>
+            <param name="_t">Value betwen 0 and 1</param>
+            <returns>Float between _a and _b, based on the given time _t</returns>
+        </member>
+        <member name="M:EaseyEase.Easey.Ease(EaseyEase.Easey.EaseType,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Ease a float between two values
+            </summary>
+            <param name="_type">Ease type</param>
+            <param name="_a">First float</param>
+            <param name="_b">Second float</param>
+            <param name="_startT">Start time</param>
+            <param name="_d">Ease duration</param>
+            <param name="_t">Current time</param>
+            <returns>Float between _a and _b, based on the the given _t through _startT and _startT plus _d</returns>
+        </member>
+        <member name="M:EaseyEase.Easey.Ease(EaseyEase.Easey.EaseType,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+            <summary>
+            Ease a float between two values
+            </summary>
+            <param name="_type">Ease type</param>
+            <param name="_a">First vector3</param>
+            <param name="_b">Second vector3</param>
+            <param name="_t">Value betwen 0 and 1</param>
+            <returns>Vector3 between _a and _b, based on the given time _t</returns>
+        </member>
+        <member name="M:EaseyEase.Easey.Ease(EaseyEase.Easey.EaseType,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,System.Single)">
+            <summary>
+            Ease a float between two values
+            </summary>
+            <param name="_type">Ease type</param>
+            <param name="_a">First vector3</param>
+            <param name="_b">Second vector3</param>
+            <param name="_startT">Start time</param>
+            <param name="_d">Ease duration</param>
+            <param name="_t">Current time</param>
+            <returns>Vector3 between _a and _b, based on the the given _t through _startT and _startT plus _d</returns>
+        </member>
+    </members>
+</doc>

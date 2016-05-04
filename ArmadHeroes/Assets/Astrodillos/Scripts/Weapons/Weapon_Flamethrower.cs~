@@ -1,0 +1,118 @@
+﻿using UnityEngine;
+using System.Collections;
+using DG.Tweening;
+
+namespace Astrodillos
+{
+    public class Weapon_Flamethrower : Weapon
+    {
+		public ParticleSystem flames;
+		private Renderer flamesRenderer; //For sorting order
+		private Collider2D flameCollider;
+		private AudioSource flameAudio;
+
+
+		private float damage = 0.01f;
+		//private bool firing = false;  //Commented out to remove warning as it does nothing
+		private float fuelBurnRate = 0.4f;
+
+
+		//Tweener flameAudioTween;
+       
+		protected override void Awake()
+        {
+			flameCollider = GetComponent<Collider2D> ();
+			flamesRenderer = flames.GetComponent<Renderer> ();
+			vibrationStrength = 0.1f;
+            weaponName = "FlameThrower";
+			base.Awake ();
+        }
+
+		public override void Fire(Vector3 spawnPos, float angle)
+        {
+			if (player.HasFuel ()) {
+				//firing = true; //Commented out to remove warning as it does nothing
+
+                StatTracker_Singleton.instance.AddFlameBullets(player.controller.playerIndex,fuelBurnRate);
+
+				player.ChangeFuel (-fuelBurnRate);
+               
+				//Set collision layer
+				gameObject.layer = SpriteOrdering.CollsionLayerFromHeight (player.GetHeight ());
+				//Set sprite ordering layer
+				flamesRenderer.sortingOrder = player.GetSpriteOrder () - 2;
+				//Only works for 8 directional shooting
+				if (angle == -90) {
+					flamesRenderer.sortingOrder += 5;
+				}
+
+				transform.position = spawnPos;
+				transform.eulerAngles = new Vector3 (0, 0, angle + 90);
+
+
+				//Vibrate controller
+				player.controller.StartVibration(vibrationStrength, 0.1f);
+				flames.Play ();
+				flameCollider.enabled = true;
+
+
+				//Audio
+				if (flameAudio == null) {
+					flameAudio = SoundManager.instance.PlayClip (fire, transform.position, true);
+				}
+
+				SoundManager.instance.SetPan(transform.position,flameAudio);
+
+			} else {
+				player.DropWeapon();
+			}
+        }
+
+		public override void StopFire()
+		{
+			flameCollider.enabled = false;
+			flames.Stop ();
+			SoundManager.instance.FadeAndKillAudio(flameAudio, 0.5f);
+			flameAudio = null;
+		}
+
+		public override void Drop ()
+		{
+			base.Drop ();
+
+			//Stop flame sound
+			StopFire();
+		}
+        
+		void OnTriggerStay2D(Collider2D col)
+        {
+			
+			//Ignore gravity
+			if (!col.usedByEffector)
+			{
+				//If not ignore collider (player)
+				if (col != player.bodyCollider)
+				{
+					if (col.tag == "Player")
+					{
+						Actor_Armad hitActor = col.gameObject.GetComponentInParent<Actor_Armad> ();
+						hitActor.TakeDamage(damage);
+                        StatTracker_Singleton.instance.AddToDamage(player.controller.playerIndex,damage);
+						if (hitActor.Health <= 0)
+                        {
+                            StatTracker_Singleton.instance.AddToKills(player.controller.playerIndex);
+							StatTracker_Singleton.instance.AddToKilledBy(player.controller.playerIndex, hitActor.controller.playerIndex);
+                        }
+
+					}
+				}
+			}
+            if (col.GetComponent<SpaceStation>())
+            {
+               col.gameObject.GetComponent<SpaceStation>().TakeDamage(damage);
+            }
+
+		}
+    } 
+   
+}

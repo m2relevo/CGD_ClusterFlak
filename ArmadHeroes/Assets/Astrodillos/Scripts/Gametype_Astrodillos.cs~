@@ -1,0 +1,164 @@
+﻿using UnityEngine;
+using System.Collections;
+using Astrodillos;
+
+
+public class Gametype_Astrodillos : MonoBehaviour {
+
+	//Singleton
+	public static Gametype_Astrodillos instance;
+
+	public GameObject controllerManagerPrefab;//For testing
+
+	//Two different settings for the gametype
+	public GameObject space;
+	public GameObject ground;
+	public ParticleSystem explosion;
+    public GameObject stats;
+
+	public JetpackManager jetpackManager;
+	public AsteroidManager asteroidManager;
+	public RocketShip rocketShip;
+
+
+	public enum GameState{
+		Ground,
+		Space
+	}
+
+	GameState gameState;
+
+    private int roundCount = 0;
+	private int currentRound = 0;
+	
+
+	// Use this for initialization
+	void Awake () {
+		if (ArmadHeroes.ControllerManager.instance == null) 
+        {
+			Instantiate(controllerManagerPrefab);
+		}
+
+		instance = this;
+
+
+	}
+
+	void Start(){
+		//Spawn the number of players for controllers
+		int initCount = Mathf.Max (8, ArmadHeroes.ControllerManager.instance.controllerCount);  //This can probably be just 8
+		for (int i = 0; i<initCount; i++) {
+			PlayerManager.instance.InitialisePlayer(i);
+		}
+		SetState (GameState.Ground);
+		
+		StartRound ();
+	}
+	
+	// Update is called once per frame
+	void Update () {
+
+	}
+
+	#region Round Management
+
+	public void EndRound()
+    {   
+		
+
+
+        //start the next round
+        if (currentRound <= roundCount)
+        {
+            Invoke("StartRound", 2.0f);
+        }
+        else
+        {
+            Invoke("EndGame", 1.0f);
+        }
+	}
+    void EndGame()
+    {
+        Instantiate(stats);
+    }
+   
+	void StartRound()
+    {
+		currentRound++;
+
+		//Spawn players in
+		bool useGravity = (gameState == GameState.Ground);
+
+		PlayerManager.instance.SpawnPlayers ();
+		asteroidManager.RemoveAllAsteroids ();
+
+		//Set the required number of players for rocket to takeoff based on the number of players spawned
+		
+		if (useGravity) 
+        {
+            rocketShip.SetRequiredPlayers(PlayerManager.instance.GetPlayerCount());
+			jetpackManager.Reset ();
+			jetpackManager.SpawnJetpack (new Vector3(0,-2,0));
+		}
+	}
+	#endregion
+
+
+	#region State Management
+
+	//Sets a new game state
+	public void SetState(GameState newState){
+        if (gameState != null)
+        {
+            LeaveState();
+        }
+
+		gameState = newState;
+
+		EnterState ();
+	}
+
+	void EnterState(){
+		switch (gameState) {
+		case GameState.Ground:
+			ground.SetActive(true);
+
+			break;
+		case GameState.Space:
+			PlayerManager.instance.SpawnPlayers ();
+
+			PlayerManager.instance.GivePlayersJetpacks();
+			space.SetActive(true);
+            StartRound();
+			break;
+
+		}
+	}
+
+	void LeaveState(){
+		switch (gameState) {
+		case GameState.Ground:
+			ground.SetActive(false);
+			break;
+		case GameState.Space:
+			space.SetActive(false);
+			break;
+			
+		}
+	}
+
+	#endregion
+
+	public void Explosion(Vector3 explosionPos){
+		explosion.gameObject.transform.position = explosionPos;
+
+		explosion.Play ();                 
+	}
+
+
+	public bool UseGravity(){
+		return gameState == GameState.Ground;
+	}
+
+
+}

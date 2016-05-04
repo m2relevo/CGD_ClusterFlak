@@ -1,0 +1,774 @@
+fileFormatVersion: 2
+guid: 57fc7fe09ba92b34f822029e52bf34c2
+timeCreated: 1453917074
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: armad_placeholder_ball
+    21300002: armad_placeholder_e
+    21300004: armad_placeholder_n
+    21300006: armad_placeholder_s
+    21300008: armad_placeholder_se
+    21300010: armade_placeholder_ne
+    21300012: armad_placeholder_head
+    21300014: armad_placeholder_ne
+    21300016: armad_placeholder_s_walk01
+    21300018: armad_placeholder_s_walk02
+    21300020: armad_placeholder_s_walk03
+    21300022: armad_placeholder_s_walk04
+    21300024: armad_placeholder_s_walk05
+    21300026: armad_placeholder_n_walk01
+    21300028: armad_placeholder_n_walk02
+    21300030: armad_placeholder_n_walk03
+    21300032: armad_placeholder_n_walk04
+    21300034: armad_placeholder_n_walk05
+    21300036: armad_placeholder_n_walk06
+    21300038: armad_placeholder_e_walk01
+    21300040: armad_placeholder_e_walk02
+    21300042: armad_placeholder_e_walk03
+    21300044: armad_placeholder_e_walk04
+    21300046: armad_placeholder_e_walk05
+    21300048: armad_placeholder_e_walk06
+    21300050: armad_placeholder_ne_walk01
+    21300052: armad_placeholder_ne_walk02
+    21300054: armad_placeholder_ne_walk03
+    21300056: armad_placeholder_ne_walk04
+    21300058: armad_placeholder_ne_walk05
+    21300060: armad_placeholder_ne_walk06
+    21300062: armad_placeholder_se_walk01
+    21300064: armad_placeholder_se_walk02
+    21300066: armad_placeholder_se_walk03
+    21300068: armad_placeholder_se_walk04
+    21300070: armad_placeholder_se_walk05
+    21300072: armad_placeholder_se_walk06
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: armad_placeholder_ball
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 447
+        width: 69
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5507246, y: 0.484375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 32}
+        - {x: -32, y: 25}
+        - {x: -32, y: -14}
+        - {x: -25, y: -31}
+        - {x: 23, y: -31}
+        - {x: 31, y: -27}
+        - {x: 31, y: 30}
+        - {x: 22, y: 32}
+    - name: armad_placeholder_e
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 435
+        width: 61
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5081967, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 38}
+        - {x: -24, y: 36}
+        - {x: -31, y: 18}
+        - {x: -31, y: -38}
+        - {x: 19, y: -38}
+        - {x: 30, y: -18}
+        - {x: 30, y: 7}
+        - {x: 4, y: 38}
+    - name: armad_placeholder_e_walk01
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 203
+        width: 61
+        height: 74
+      alignment: 9
+      pivot: {x: 0.5081967, y: 0.5135135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 36}
+        - {x: -21, y: 34}
+        - {x: -31, y: 23}
+        - {x: -31, y: -29}
+        - {x: -29, y: -38}
+        - {x: 7, y: -38}
+        - {x: 30, y: -15}
+        - {x: 30, y: 4}
+        - {x: 0, y: 36}
+    - name: armad_placeholder_e_walk02
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 199
+        width: 59
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5254237, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.000002, y: 38}
+        - {x: -16.999998, y: 38}
+        - {x: -23.999998, y: 35}
+        - {x: -30.999998, y: 26}
+        - {x: -30.999998, y: -30}
+        - {x: -28.999998, y: -36}
+        - {x: -21.999998, y: -38}
+        - {x: 12.000002, y: -38}
+        - {x: 28.000002, y: -13}
+        - {x: 28.000002, y: 3}
+        - {x: 19.000002, y: 16}
+    - name: armad_placeholder_e_walk03
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 122
+        width: 59
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5254237, y: 0.49333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 38}
+        - {x: -29, y: 38}
+        - {x: -31, y: 28}
+        - {x: -31, y: -24}
+        - {x: -28, y: -30}
+        - {x: -11, y: -37}
+        - {x: 19, y: -37}
+        - {x: 28, y: -10}
+        - {x: 28, y: 0}
+        - {x: 18, y: 18}
+    - name: armad_placeholder_e_walk04
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 291
+        width: 61
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5081967, y: 0.49295774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: -26}
+        - {x: -26, y: -35}
+        - {x: 14, y: -35}
+        - {x: 30, y: -23}
+        - {x: 30, y: 2}
+        - {x: 16, y: 34}
+        - {x: 7, y: 36}
+        - {x: -30, y: 36}
+        - {x: -31, y: 26}
+    - name: armad_placeholder_e_walk05
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 277
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 36}
+        - {x: 5, y: 38}
+        - {x: -28, y: 38}
+        - {x: -31, y: 28}
+        - {x: -31, y: -22}
+        - {x: -29, y: -35}
+        - {x: -22, y: -38}
+        - {x: -7, y: -38}
+        - {x: 20, y: -22}
+        - {x: 31, y: -10}
+        - {x: 31, y: -3}
+    - name: armad_placeholder_e_walk06
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 356
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: -24}
+        - {x: 31, y: -9}
+        - {x: 31, y: 5}
+        - {x: 14, y: 37}
+        - {x: 9, y: 38}
+        - {x: -28, y: 38}
+        - {x: -31, y: 29}
+        - {x: -31, y: -13}
+        - {x: -28, y: -38}
+        - {x: -7, y: -38}
+        - {x: -7, y: -32}
+        - {x: 0, y: -34}
+    - name: armad_placeholder_head
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 19}
+        - {x: -17, y: -11}
+        - {x: -10, y: -19}
+        - {x: 17, y: -19}
+        - {x: 17, y: 19}
+    - name: armad_placeholder_n
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 279
+        width: 42
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 38}
+        - {x: -21, y: -37}
+        - {x: 17, y: -37}
+        - {x: 21, y: -26}
+        - {x: 21, y: 10}
+        - {x: 15, y: 38}
+    - name: armad_placeholder_n_walk01
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 374
+        width: 42
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46969697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 35}
+        - {x: -21, y: -31}
+        - {x: 21, y: -31}
+        - {x: 21, y: 21}
+        - {x: 19, y: 35}
+    - name: armad_placeholder_n_walk02
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 439
+        width: 42
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4861111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 37}
+        - {x: -21, y: -35}
+        - {x: 5, y: -35}
+        - {x: 21, y: -14}
+        - {x: 21, y: 20}
+        - {x: 19, y: 37}
+    - name: armad_placeholder_n_walk03
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 121
+        width: 42
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: -38}
+        - {x: 4, y: -38}
+        - {x: 21, y: -26}
+        - {x: 21, y: 31}
+        - {x: 18, y: 38}
+        - {x: -21, y: 38}
+    - name: armad_placeholder_n_walk04
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 297
+        width: 42
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47761193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 35}
+        - {x: -21, y: -26}
+        - {x: -14, y: -32}
+        - {x: 7, y: -32}
+        - {x: 21, y: -22}
+        - {x: 21, y: 29}
+        - {x: 20, y: 35}
+    - name: armad_placeholder_n_walk05
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 438
+        width: 42
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49315068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 37}
+        - {x: -21, y: -21}
+        - {x: -15, y: -29}
+        - {x: 1, y: -36}
+        - {x: 11, y: -36}
+        - {x: 21, y: -17}
+        - {x: 21, y: 24}
+        - {x: 20, y: 37}
+    - name: armad_placeholder_n_walk06
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 199
+        width: 42
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: 38}
+        - {x: -21, y: 38}
+        - {x: -21, y: -20}
+        - {x: -5, y: -38}
+        - {x: 9, y: -38}
+        - {x: 15, y: -32}
+        - {x: 21, y: -17}
+        - {x: 21, y: 16}
+    - name: armad_placeholder_ne
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 355
+        width: 57
+        height: 77
+      alignment: 9
+      pivot: {x: 0.50877196, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.999998, y: 38.5}
+        - {x: -29.000002, y: 38.5}
+        - {x: -29.000002, y: -24.5}
+        - {x: -23.000002, y: -37.5}
+        - {x: -18.000002, y: -38.5}
+        - {x: 11.999998, y: -38.5}
+        - {x: 27.999998, y: 1.5}
+        - {x: 27.999998, y: 19.5}
+        - {x: 15.999998, y: 18.5}
+    - name: armad_placeholder_ne_walk01
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 364
+        width: 57
+        height: 72
+      alignment: 9
+      pivot: {x: 0.50877196, y: 0.5069444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 35.5}
+        - {x: -29, y: 35.5}
+        - {x: -29, y: -32.5}
+        - {x: -20, y: -35.5}
+        - {x: 4, y: -35.5}
+        - {x: 28, y: -1.5}
+        - {x: 28, y: 16.5}
+        - {x: 16, y: 15.5}
+    - name: armad_placeholder_ne_walk02
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 366
+        width: 58
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5, y: 0.471831}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 37.5}
+        - {x: -29, y: 30.5}
+        - {x: -29, y: -25.5}
+        - {x: -16, y: -33.5}
+        - {x: 14, y: -33.5}
+        - {x: 20, y: -31.5}
+        - {x: 29, y: 3.5}
+        - {x: 29, y: 22.5}
+        - {x: 5, y: 37.5}
+    - name: armad_placeholder_ne_walk03
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 442
+        width: 58
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5, y: 0.442029}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 38.5}
+        - {x: -29, y: 33.5}
+        - {x: -29, y: -30.5}
+        - {x: 29, y: -30.5}
+        - {x: 29, y: 28.5}
+        - {x: 7, y: 38.5}
+    - name: armad_placeholder_ne_walk04
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 221
+        width: 57
+        height: 68
+      alignment: 9
+      pivot: {x: 0.50877196, y: 0.4779412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 35.5}
+        - {x: -27, y: 35.5}
+        - {x: -29, y: 30.5}
+        - {x: -29, y: -27.5}
+        - {x: -16, y: -32.5}
+        - {x: 8, y: -32.5}
+        - {x: 28, y: -4.5}
+        - {x: 28, y: 27.5}
+    - name: armad_placeholder_ne_walk05
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 43
+        width: 55
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5272727, y: 0.5065789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.999998, y: 37.5}
+        - {x: -28.999998, y: 32.5}
+        - {x: -28.999998, y: -21.5}
+        - {x: -18.999998, y: -38.5}
+        - {x: -2.999998, y: -38.5}
+        - {x: 26.000002, y: 4.5}
+        - {x: 26.000002, y: 28.5}
+        - {x: 5.000002, y: 37.5}
+    - name: armad_placeholder_ne_walk06
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 434
+        width: 58
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: 16.5}
+        - {x: 26, y: 20.5}
+        - {x: 6, y: 38.5}
+        - {x: -29, y: 38.5}
+        - {x: -29, y: -23.5}
+        - {x: -18, y: -38.5}
+        - {x: -4, y: -38.5}
+        - {x: 1, y: -33.5}
+        - {x: 22, y: 1.5}
+        - {x: 27, y: 12.5}
+    - name: armad_placeholder_s
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 46
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 37}
+        - {x: -18, y: -37}
+        - {x: 18, y: -37}
+        - {x: 18, y: 37}
+    - name: armad_placeholder_s_walk01
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 439
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 36}
+        - {x: -18, y: -36}
+        - {x: 17, y: -36}
+        - {x: 18, y: -29}
+        - {x: 18, y: 36}
+    - name: armad_placeholder_s_walk02
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 46
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 37}
+        - {x: -18, y: -37}
+        - {x: 5, y: -37}
+        - {x: 18, y: -33}
+        - {x: 18, y: 37}
+    - name: armad_placeholder_s_walk03
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 296
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 34}
+        - {x: -18, y: -34}
+        - {x: 13, y: -34}
+        - {x: 18, y: -22}
+        - {x: 18, y: 34}
+    - name: armad_placeholder_s_walk04
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 363
+        width: 36
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5068493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 36}
+        - {x: -18, y: -23}
+        - {x: -1, y: -37}
+        - {x: 18, y: -37}
+        - {x: 18, y: 36}
+    - name: armad_placeholder_s_walk05
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 127
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 37}
+        - {x: -18, y: -24}
+        - {x: -12, y: -36}
+        - {x: -6, y: -37}
+        - {x: 18, y: -37}
+        - {x: 18, y: 37}
+    - name: armad_placeholder_se
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 121
+        width: 56
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: -35}
+        - {x: 4, y: -38}
+        - {x: 22, y: -38}
+        - {x: 28, y: -32}
+        - {x: 28, y: -13}
+        - {x: 17, y: 38}
+        - {x: -24, y: 38}
+        - {x: -28, y: 30}
+        - {x: -28, y: -38}
+        - {x: -6, y: -38}
+        - {x: -4, y: -26}
+        - {x: -4, y: -24}
+        - {x: -4, y: -32}
+    - name: armad_placeholder_se_walk01
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 52
+        width: 56
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5205479}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 35}
+        - {x: -28, y: -34}
+        - {x: -24, y: -38}
+        - {x: 28, y: -38}
+        - {x: 28, y: 20}
+        - {x: 25, y: 35}
+    - name: armad_placeholder_se_walk02
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 202
+        width: 54
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5185185, y: 0.50666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 37}
+        - {x: -28, y: 37}
+        - {x: -28, y: -22}
+        - {x: -18, y: -38}
+        - {x: 15, y: -38}
+        - {x: 23, y: -27}
+        - {x: 24, y: -25}
+        - {x: 24, y: -12}
+    - name: armad_placeholder_se_walk03
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 43
+        width: 52
+        height: 76
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: -24}
+        - {x: 23, y: -25}
+        - {x: 24, y: -22}
+        - {x: 24, y: -11}
+        - {x: 17, y: 38}
+        - {x: -28, y: 38}
+        - {x: -28, y: -32}
+        - {x: -21, y: -38}
+        - {x: 20, y: -38}
+        - {x: 24, y: -36}
+        - {x: 24, y: -32}
+        - {x: 18, y: -28}
+        - {x: 15, y: -23}
+        - {x: 12, y: -23}
+    - name: armad_placeholder_se_walk04
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 128
+        width: 56
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5205479}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 35}
+        - {x: -28, y: -31}
+        - {x: -21, y: -36}
+        - {x: 28, y: -36}
+        - {x: 28, y: 23}
+        - {x: 27, y: 34}
+        - {x: 25, y: 35}
+    - name: armad_placeholder_se_walk05
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 53
+        width: 56
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49315068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: -7}
+        - {x: 17, y: 33}
+        - {x: 16, y: 37}
+        - {x: -24, y: 37}
+        - {x: -28, y: 23}
+        - {x: -28, y: -13}
+        - {x: -23, y: -36}
+        - {x: 17, y: -36}
+        - {x: 28, y: -26}
+        - {x: 28, y: -16}
+    - name: armad_placeholder_se_walk06
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 279
+        width: 56
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 35}
+        - {x: 16, y: 38}
+        - {x: -24, y: 38}
+        - {x: -28, y: 31}
+        - {x: -28, y: -36}
+        - {x: 26, y: -36}
+        - {x: 28, y: -33}
+        - {x: 28, y: -7}
+        - {x: 25, y: -5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

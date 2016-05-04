@@ -1,0 +1,249 @@
+fileFormatVersion: 2
+guid: d3661648c4213db4a83f88596f678fe0
+timeCreated: 1454454886
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ARMAD_SPRITE_SHEET_BALL
+    21300002: ARMAD_SPRITE_SHEET_TL
+    21300004: ARMAD_SPRITE_SHEET_UP
+    21300006: ARMAD_SPRITE_SHEET_UR
+    21300008: ARMAD_SPRITE_SHEET_LEFT
+    21300010: ARMAD_SPRITE_SHEET_RIGHT
+    21300012: ARMAD_SPRITE_SHEET_DL
+    21300014: ARMAD_SPRITE_SHEET_DR
+    21300016: ARMAD_SPRITE_SHEET_DOWN
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ARMAD_SPRITE_SHEET_BALL
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 234
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 30}
+        - {x: -30, y: 24}
+        - {x: -30, y: -30}
+        - {x: 20, y: -30}
+        - {x: 30, y: -25}
+        - {x: 30, y: 29}
+        - {x: 26, y: 30}
+    - name: ARMAD_SPRITE_SHEET_TL
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 174
+        width: 56
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 39}
+        - {x: -9, y: 39}
+        - {x: -28, y: 28}
+        - {x: -28, y: -6}
+        - {x: -16, y: -36}
+        - {x: -9, y: -39}
+        - {x: 16, y: -39}
+        - {x: 20, y: -34}
+        - {x: 28, y: -19}
+    - name: ARMAD_SPRITE_SHEET_UP
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 176
+        width: 42
+        height: 75
+      alignment: 9
+      pivot: {x: 0.452, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.983994, y: 37.5}
+        - {x: -18.983994, y: -35.5}
+        - {x: -13.983994, y: -37.5}
+        - {x: 16.016006, y: -37.5}
+        - {x: 23.016006, y: -32.5}
+        - {x: 23.016006, y: 37.5}
+    - name: ARMAD_SPRITE_SHEET_UR
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 174
+        width: 59
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.5, y: 40}
+        - {x: -29.5, y: 12}
+        - {x: -29.5, y: -11}
+        - {x: -21.5, y: -37}
+        - {x: -15.5, y: -40}
+        - {x: 20.5, y: -40}
+        - {x: 29.5, y: -31}
+        - {x: 29.5, y: 26}
+        - {x: 19.5, y: 40}
+    - name: ARMAD_SPRITE_SHEET_LEFT
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 96
+        width: 58
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 39}
+        - {x: -29, y: 9}
+        - {x: -29, y: -20}
+        - {x: -2, y: -39}
+        - {x: 22, y: -39}
+        - {x: 28, y: -38}
+        - {x: 29, y: -28}
+        - {x: 29, y: 30}
+        - {x: 23, y: 39}
+    - name: ARMAD_SPRITE_SHEET_RIGHT
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 96
+        width: 60
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 39}
+        - {x: -25, y: 39}
+        - {x: -30, y: 27}
+        - {x: -30, y: -28}
+        - {x: -28, y: -39}
+        - {x: 1, y: -39}
+        - {x: 30, y: -12}
+        - {x: 30, y: 13}
+        - {x: 15, y: 35}
+    - name: ARMAD_SPRITE_SHEET_DL
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 18
+        width: 54
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 39}
+        - {x: -27, y: -2}
+        - {x: -27, y: -24}
+        - {x: -23, y: -24}
+        - {x: -17, y: -22}
+        - {x: -17, y: -32}
+        - {x: -14, y: -37}
+        - {x: 2, y: -35}
+        - {x: 3, y: -32}
+        - {x: 3, y: -26}
+        - {x: 4, y: -32}
+        - {x: 6, y: -39}
+        - {x: 24, y: -39}
+        - {x: 27, y: -38}
+        - {x: 27, y: 39}
+    - name: ARMAD_SPRITE_SHEET_DR
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 18
+        width: 54
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: -24}
+        - {x: -3, y: -32}
+        - {x: -2, y: -35}
+        - {x: 9, y: -39}
+        - {x: 20, y: -39}
+        - {x: 27, y: -35}
+        - {x: 27, y: 39}
+        - {x: -27, y: 39}
+        - {x: -27, y: -39}
+        - {x: -7, y: -39}
+        - {x: -5, y: -36}
+        - {x: -5, y: -32}
+        - {x: -3, y: -26}
+    - name: ARMAD_SPRITE_SHEET_DOWN
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 21
+        width: 36
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: 37.5}
+        - {x: -18, y: 37.5}
+        - {x: -18, y: -37.5}
+        - {x: -6, y: -37.5}
+        - {x: -3, y: -34.5}
+        - {x: 10, y: -37.5}
+        - {x: 18, y: -37.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

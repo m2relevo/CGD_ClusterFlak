@@ -1,0 +1,98 @@
+Team asset folder, use as you wish.
+/////////////
+02/02/16
+/////////////
+Peter,
+
+Created a scene to try to build iso movement.
+(Created in version 5.0.1 (due to 2q24 being on this version). Should be issue free but just keep this in mind)
+
+Folder 1.0 will contain all version 1.0 work. 
+At this stage 1.0 will be all tests and prototype work.
+
+IsoMovement 1.0 is attempt at working in iso and moving players.
+
+Player always moving, direction arrows change player direction.
+
+Made script to handle sprites, not very efficient but makes code a bit more human readable / flexible. Simply add the sprites to its sprite array, and then
+add their names (in order they are added) to the name list. (example of how to access a script in isomove)...
+
+Set up quick function for handling players bouncing when they hit the edge. 
+
+/////////////
+03/02/16
+/////////////
+Peter,
+
+Created archive folder in scripts, to put obsolete but potential useful scripts into.
+Beginning work on a NEW movement script for VEHICLES
+//////////
+06/02/16
+//////////
+Gareth,
+
+Created Input manager to handle input and output direction to the appeopriate movement classes (to be created)
+Skeleton of script, logic is there but needs covertion to actual code
+(Initialy dont on 05/02 butlost due to repository issues)
+//////////
+08/02/16
+//////////
+Peter,
+
+Began work on vehicle movement script. 360 degree turning, with 'closest fit' sprites. Currently plain forward movement, hope to have it accelerate / deccelerate.
+Also added a 'floor hit box' for the player, to allow us to detect if off the edge (should also work for collisions too ?). Should just destroy player when they leave map. 
+(This also uses a custom hitbox for the floor, needs to be updated as the ground is)
+
+
+//////////
+22/02/16
+//////////
+Peter,
+
+Bit of a mix in this one, so sit tight.
+Firstly, should have 'fixed' the vehicle movement and interactions now. This still uses just the bouncy material, but I should be able to fiddle with custom collision stuff
+now.
+Also spent a bit of time getting two player movement onto a controller however it doesn't synch up with my xbox controllers so it's a bit funny, but next time we get a chance, would should 
+get 2 (atleast) people playing together just to get a feel for how things work when the other players are actually moveing too. 
+
+Finally, I have started on getting a general bit of gameplay in. This so far consits of displaying lives (which should work dynamically as we add players (aslong as it no more than 4))
+and falling off the edge now causes players to lose a life, upon losing 3 they are 'out' and become disabled, Currently losing players are just added to a list on screen but hopefully I 
+can turn this into a leaderboard when only one player remains at the end.
+
+//////////
+24/02/16
+//////////
+Peter,
+
+Created a second 'version' 2.0, to make use of 1.0 stuff in a tidier environment. This uses the same background as most of the other teams,so it looks a bit nicer, 
+and this should give us some room to get a better feel for everything. 
+
+Set up 2 individual 'player' prefabs so we can more easily test each movement style etc...
+
+
+//////////
+03/03/16
+//////////
+Peter,
+
+Firstly, fixed the mumbo jumbo causing the scoring thing to not work in 2.0.
+
+Aside from that I've started working on a custom collision system (because it will look nice and I don't know what else to do :S)
+So far this has just been set up to call a function on a collision with some (probably dirty as hell) system to ensure it is only called once per collision
+(Obviously with two thingies needed for a collision, it would get called twice for each collision without this). And i've commented out how I expect
+each 'type' of collision (head on, from behind and side on) to behave.
+Will flesh this out in future updates.
+
+
+
+//////////
+07/03/16
+//////////
+Peter, 
+
+Rearranged file structure to include a General folder (things that aren't version specific)
+
+Started developing a rounds system, rather than the lives system in 2.0. This is sort of functioning, but needs to be FIXED because it's got some issues with
+detecting what to do when.
+
+

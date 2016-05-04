@@ -1,0 +1,838 @@
+fileFormatVersion: 2
+guid: 31382032c2cc0234b81a78affb59f2f3
+timeCreated: 1459258732
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: E-ball00
+    21300002: E-ball01
+    21300004: E-ball02
+    21300006: E-run00
+    21300008: E-run01
+    21300010: E-run02
+    21300012: E-run03
+    21300014: E-run04
+    21300016: E-run05
+    21300018: N-ball00
+    21300020: N-ball01
+    21300022: N-ball02
+    21300024: N-run00
+    21300026: N-run01
+    21300028: N-run02
+    21300030: N-run03
+    21300032: N-run04
+    21300034: N-run05
+    21300036: NE-ball00
+    21300038: NE-ball01
+    21300040: NE-ball02
+    21300042: NE-run00
+    21300044: NE-run01
+    21300046: NE-run02
+    21300048: NE-run03
+    21300050: NE-run04
+    21300052: NE-run05
+    21300054: S-ball00
+    21300056: S-ball01
+    21300058: S-ball02
+    21300060: S-run00
+    21300062: S-run01
+    21300064: S-run02
+    21300066: S-run03
+    21300068: S-run04
+    21300070: S-run05
+    21300072: SE-ball00
+    21300074: SE-ball01
+    21300076: SE-ball02
+    21300078: SE-run00
+    21300080: SE-run01
+    21300082: SE-run02
+    21300084: SE-run03
+    21300086: SE-run04
+    21300088: SE-run05
+    21300090: E-stand
+    21300092: N-stand
+    21300094: NE-stand
+    21300096: S-stand
+    21300098: SE-stand
+    21300100: Head
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: E-ball00
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 146
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: E-ball01
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 185
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: E-ball02
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 223
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: E-run00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 175
+        width: 34
+        height: 39
+      alignment: 9
+      pivot: {x: 0.45588234, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 19.5}
+        - {x: -14.5, y: -15.5}
+        - {x: -13.5, y: -19.5}
+        - {x: 7.5, y: -19.5}
+        - {x: 18.5, y: -7.5}
+        - {x: 18.5, y: 14.5}
+        - {x: 10.5, y: 19.5}
+    - name: E-run01
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 53
+        width: 32
+        height: 38
+      alignment: 9
+      pivot: {x: 0.421875, y: 0.5131579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 18.5}
+        - {x: -9.5, y: 18.5}
+        - {x: -13.5, y: 12.5}
+        - {x: -13.5, y: -18.5}
+        - {x: -10.5, y: -19.5}
+        - {x: 1.5, y: -19.5}
+        - {x: 18.5, y: -9.5}
+        - {x: 18.5, y: 3.5}
+    - name: E-run02
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 59
+        width: 34
+        height: 36
+      alignment: 9
+      pivot: {x: 0.45588234, y: 0.5138889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 17.5}
+        - {x: -12.5, y: 17.5}
+        - {x: -14.5, y: 7.5}
+        - {x: -14.5, y: -8.5}
+        - {x: -6.5, y: -18.5}
+        - {x: 10.5, y: -18.5}
+        - {x: 18.5, y: -7.5}
+        - {x: 18.5, y: 8.5}
+        - {x: 10.5, y: 16.5}
+    - name: E-run03
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 216
+        width: 36
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5138889, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 19.5}
+        - {x: -12.5, y: 19.5}
+        - {x: -14.5, y: 9.5}
+        - {x: -14.5, y: -7.5}
+        - {x: -8.5, y: -18.5}
+        - {x: -5.5, y: -19.5}
+        - {x: 10.5, y: -19.5}
+        - {x: 13.5, y: -17.5}
+        - {x: 17.5, y: -7.5}
+        - {x: 17.5, y: 9.5}
+        - {x: 10.5, y: 18.5}
+    - name: E-run04
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 94
+        width: 31
+        height: 38
+      alignment: 9
+      pivot: {x: 0.43548387, y: 0.5131579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: E-run05
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 178
+        width: 36
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4861111, y: 0.527027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 17.5}
+        - {x: -12.5, y: 17.5}
+        - {x: -14.5, y: 7.5}
+        - {x: -14.5, y: -4.5}
+        - {x: -12.5, y: -10.5}
+        - {x: -7.5, y: -19.5}
+        - {x: 4.5, y: -19.5}
+        - {x: 18.5, y: -8.5}
+        - {x: 18.5, y: 2.5}
+        - {x: 10.5, y: 16.5}
+    - name: E-stand
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 176
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Head
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 235
+        width: 19
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: N-ball00
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 189
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: N-ball01
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 155
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: N-ball02
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 121
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: N-run00
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 11
+        width: 26
+        height: 39
+      alignment: 9
+      pivot: {x: 0.48076922, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: N-run01
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 139
+        width: 23
+        height: 37
+      alignment: 9
+      pivot: {x: 0.54347825, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: N-run02
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 66
+        width: 23
+        height: 34
+      alignment: 9
+      pivot: {x: 0.54347825, y: 0.4852941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: N-run03
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 11
+        width: 27
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5740741, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: N-run04
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 179
+        width: 23
+        height: 37
+      alignment: 9
+      pivot: {x: 0.54347825, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: N-run05
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 105
+        width: 23
+        height: 34
+      alignment: 9
+      pivot: {x: 0.54347825, y: 0.4852941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: N-stand
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 140
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NE-ball00
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 32
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: NE-ball01
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 71
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: NE-ball02
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 87
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: NE-run00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 93
+        width: 31
+        height: 39
+      alignment: 9
+      pivot: {x: 0.4032258, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NE-run01
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 135
+        width: 31
+        height: 38
+      alignment: 9
+      pivot: {x: 0.4032258, y: 0.5131579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NE-run02
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 141
+        width: 30
+        height: 36
+      alignment: 9
+      pivot: {x: 0.41666666, y: 0.5138889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NE-run03
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 218
+        width: 33
+        height: 37
+      alignment: 9
+      pivot: {x: 0.43939394, y: 0.47297296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.5, y: -3.5}
+        - {x: 18.5, y: 14.5}
+        - {x: 7.5, y: 19.5}
+        - {x: -10.5, y: 19.5}
+        - {x: -13.5, y: 10.5}
+        - {x: -13.5, y: -8.5}
+        - {x: -7.5, y: -17.5}
+        - {x: -2.5, y: -17.5}
+        - {x: 0.5, y: -14.5}
+        - {x: 4.5, y: -17.5}
+        - {x: 11.5, y: -17.5}
+    - name: NE-run04
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 102
+        width: 31
+        height: 36
+      alignment: 9
+      pivot: {x: 0.4032258, y: 0.4861111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NE-run05
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 180
+        width: 30
+        height: 36
+      alignment: 9
+      pivot: {x: 0.41666666, y: 0.5138889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NE-stand
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 13
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: S-ball00
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 189
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: S-ball01
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 121
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: S-ball02
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 155
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: S-run00
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 95
+        width: 20
+        height: 38
+      alignment: 9
+      pivot: {x: 0.625, y: 0.4868421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: S-run01
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 179
+        width: 20
+        height: 37
+      alignment: 9
+      pivot: {x: 0.625, y: 0.47297296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: S-run02
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 22
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.625, y: 0.47142857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: S-run03
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 136
+        width: 20
+        height: 38
+      alignment: 9
+      pivot: {x: 0.625, y: 0.4868421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: S-run04
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 218
+        width: 20
+        height: 37
+      alignment: 9
+      pivot: {x: 0.625, y: 0.47297296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: S-run05
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 22
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.625, y: 0.47142857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: S-stand
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 15
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SE-ball00
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 53
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: SE-ball01
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 19
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: SE-ball02
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 19
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 15.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -9.5}
+        - {x: -8.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 15.5, y: -10.5}
+        - {x: 15.5, y: 15.5}
+    - name: SE-run00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 134
+        width: 32
+        height: 39
+      alignment: 9
+      pivot: {x: 0.515625, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 19.5}
+        - {x: -15.5, y: 15.5}
+        - {x: -15.5, y: -16.5}
+        - {x: -12.5, y: -19.5}
+        - {x: 9.5, y: -19.5}
+        - {x: 15.5, y: -13.5}
+        - {x: 15.5, y: 3.5}
+        - {x: 10.5, y: 19.5}
+    - name: SE-run01
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 218
+        width: 30
+        height: 37
+      alignment: 9
+      pivot: {x: 0.48333332, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SE-run02
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 219
+        width: 29
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5138889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SE-run03
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 52
+        width: 29
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5689655, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SE-run04
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 217
+        width: 30
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5833333, y: 0.5131579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SE-run05
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 97
+        width: 29
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.527027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SE-stand
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 54
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

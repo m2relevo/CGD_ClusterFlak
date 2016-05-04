@@ -1,0 +1,70 @@
+﻿using UnityEngine;
+using System.Collections;
+
+namespace Astrodillos {
+	public class MapCreator : MonoBehaviour {
+
+		public static MapCreator instance;
+
+		public GameObject floorTile;
+		public GameObject rocket;
+		public Texture2D groundImage;
+		public Texture2D spaceImage;
+
+
+		GameObject obj;
+
+		// Use this for initialization
+		void Awake(){
+
+			instance = this;
+
+		}
+		
+		public void CreateGroundLevel(){
+		//	ClearMap();
+			CreateGroundMap();
+		}
+
+		public void CreateSpaceLevel(){
+		//	ClearMap();
+			CreateSpaceMap();
+		}
+
+		public void ClearMap(){
+			//Gets all the children of this game object
+			int childs = transform.childCount;
+			//For loop goes through deleting all the cubes as they are not needed
+			for (int i = childs - 1; i >= 0; i--){
+				GameObject.DestroyImmediate(transform.GetChild(i).gameObject);
+			}
+			//Detach children acts as a final cleanup
+			transform.DetachChildren ();
+		}
+		
+		void CreateGroundMap(){
+			Color[] pixels = groundImage.GetPixels(0, 0, groundImage.width, groundImage.height);
+			
+			for(int x = groundImage.width - 1; x>=0; x--){
+				for(int y = groundImage.height - 1; y>=0; y--){
+					Color color =  pixels[(x*groundImage.width + y)];
+				
+					if(color == Color.black){	
+						obj = (GameObject)Instantiate(rocket, new Vector3( x- 15,groundImage.height - y- 15,0).toIso(), Quaternion.identity);
+						//obj.GetComponent<SpriteRenderer>().color = color;
+						obj.GetComponent<SpriteRenderer>().sortingLayerName = "Midground";
+						obj.transform.parent = gameObject.transform;
+						Gametype_Astrodillos.instance.rocketShip = obj.GetComponent<RocketShip>();
+					}
+				}
+			}
+		}
+
+		void CreateSpaceMap(){
+
+
+		}
+		
+	}
+
+}

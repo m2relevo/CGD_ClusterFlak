@@ -1,0 +1,57 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+using ArmadHeroes;
+
+namespace Astrodillos{
+	public class CharacterSelectFile : MonoBehaviour {
+
+		public Image character;
+		public Text characterName;
+		public Sprite[] characters;
+
+		private string cName;
+
+		private Controller controller {
+			get { return ControllerManager.instance.GetController (controllerIndex); }
+			set{ }
+		}
+
+		private int controllerIndex = 0;
+		// Use this for initialization
+		void Awake () {
+		
+		}
+		
+		// Update is called once per frame
+		void Update () {
+			if (controller.moveY.GetValue () != 0) {
+				if (controller.moveY.JustPressed ()) {
+					int changeDirection = controller.moveY.GetValue () > 0 ? 1 : -1;
+					ChangeCharacter (changeDirection);
+				}
+			}
+		}
+
+		//Set an controller to control this character file
+		public void AssignController(int _controllerIndex){
+			controllerIndex = _controllerIndex;
+		}
+
+		public void ChangeCharacter(int direction){
+			cName =  GlobalPlayerManager.instance.GetCharacterName (direction,cName);
+
+			characterName.text = cName;
+			//Find correct sprite for character
+			for (int i = 0; i < characters.Length; i++) {
+				if (characters [i].name.Contains (cName)) {
+					character.sprite = characters [i];
+					break;
+				}
+			}
+
+			//Update the character the player is using
+			GlobalPlayerManager.instance.SetPlayerName (controllerIndex, cName);
+		}
+	}
+}

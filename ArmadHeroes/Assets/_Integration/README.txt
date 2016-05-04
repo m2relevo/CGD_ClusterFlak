@@ -1,0 +1,1 @@
+Asset folder for integrated assets, please clear additions to this folder with Integrations team / staff.

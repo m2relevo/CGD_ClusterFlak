@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7dfd88516b2780246bb2dd2b0fd401a2
+timeCreated: 1453153804
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - projectile: {instanceID: 0}
+  - explosion: {instanceID: 0}
+  - crosshair: {instanceID: 0}
+  - m_CanvasPlayerID: {instanceID: 0}
+  - poisonUI: {instanceID: 0}
+  - explosionUI: {instanceID: 0}
+  - shootSound: {fileID: 8300000, guid: b6e4e4b4770d22d43aba63f6a4cace23, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

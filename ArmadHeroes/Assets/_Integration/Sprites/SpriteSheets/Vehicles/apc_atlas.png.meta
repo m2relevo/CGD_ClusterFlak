@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 080790c7691e2fd449e876e3eec5771f
+timeCreated: 1460027108
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: apc-1-up
+    21300002: apc-2-up-side
+    21300004: apc-3-side
+    21300006: apc-4-down-side
+    21300008: apc-5-down
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: apc-1-up
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 23
+        width: 63
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: -52}
+        - {x: 31.5, y: -52}
+        - {x: 31.5, y: 52}
+        - {x: -31.5, y: 52}
+    - name: apc-2-up-side
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 33
+        width: 113
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 47}
+        - {x: -56.5, y: 20}
+        - {x: -56.5, y: -17}
+        - {x: -22.5, y: -47}
+        - {x: 22.5, y: -47}
+        - {x: 56.5, y: -37}
+        - {x: 56.5, y: 27}
+        - {x: 31.5, y: 47}
+    - name: apc-3-side
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 58
+        width: 107
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53.5, y: 34.5}
+        - {x: -53.5, y: -15.5}
+        - {x: -38.5, y: -34.5}
+        - {x: 38.5, y: -34.5}
+        - {x: 53.5, y: -20.5}
+        - {x: 53.5, y: 16.5}
+        - {x: 40.5, y: 34.5}
+    - name: apc-4-down-side
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 27
+        width: 111
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53.5, y: 50}
+        - {x: -55.5, y: 48}
+        - {x: -55.5, y: -50}
+        - {x: 5.5, y: -50}
+        - {x: 55.5, y: -34}
+        - {x: 55.5, y: 18}
+        - {x: 12.5, y: 50}
+    - name: apc-5-down
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 23
+        width: 63
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: -52}
+        - {x: 31.5, y: -52}
+        - {x: 31.5, y: 52}
+        - {x: -31.5, y: 52}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

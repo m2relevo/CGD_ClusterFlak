@@ -1,0 +1,117 @@
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Collections;
+using ArmadHeroes;
+
+namespace Astrodillos{
+	public class MissionBriefing : MonoBehaviour {
+
+		/*Mission Order
+		Armatillery,
+		Astrodillos,
+		Clusterflak,
+		DilloDash,
+		Shellshock,
+		Sumo,
+		ZonePatrol
+		*/
+
+		public Image missionImage;
+		public Sprite[] missionSprites;
+
+
+		private int currentMission = 0;
+
+		// Use this for initialization
+		void Awake () {
+			GameManager.instance.missionBriefing = gameObject;
+			gameObject.SetActive (false);
+
+			missionImage.sprite = missionSprites [currentMission];
+		}
+		
+		// Update is called once per frame
+		void Update () {
+			//Player 1 starts game
+			if(ControllerManager.instance.GetController(0).isSplit){
+				if (ControllerManager.instance.GetController(1).boostButton.JustPressed() || ControllerManager.instance.GetController(0).pauseButton.JustPressed()) {
+					StartGame ();
+				}
+			}
+			else if (ControllerManager.instance.GetController(0).boostButton.JustPressed() || ControllerManager.instance.GetController(0).pauseButton.JustPressed()) {
+				StartGame ();
+			}
+
+
+			if (ControllerManager.instance.GetController(0).moveX.JustPressed())
+			{
+				if (ControllerManager.instance.GetController (0).moveX.GetValue () > 0) {
+					NextMission ();
+				} else {
+					PrevMission ();
+				}
+			}
+
+		}
+
+		void StartGame()
+		{
+			switch (currentMission) {
+			//Armatillery
+			case 0:
+                LoadScene("Main");
+				break;
+			//Astrodillos
+			case 1:
+				LoadScene ("AstroLevel1");
+				break;
+			//Clusterflak
+			case 2:
+				break;
+			//Dillo Dash
+			case 3:
+                LoadScene("DilloDash");
+                break;
+			//ShellShock
+			case 4:
+				LoadScene ("ShellShock");
+                break;
+			//Sumo
+			case 5:
+				LoadScene ("Sumo");
+				break;
+			//Zone Patrol
+			case 6:
+				break;
+			}
+
+		}
+
+		void LoadScene(string name){
+			SceneManager.LoadSceneAsync(name);
+		}
+
+		void NextMission(){
+			currentMission++;
+
+			if (currentMission> missionSprites.Length-1) {
+				currentMission = 0;
+			}
+
+			missionImage.sprite = missionSprites [currentMission];
+		}
+
+		void PrevMission(){
+			currentMission--;
+
+			if (currentMission < 0) {
+				currentMission = missionSprites.Length-1;
+			}
+
+			missionImage.sprite = missionSprites [currentMission];
+
+
+		}
+	}
+}

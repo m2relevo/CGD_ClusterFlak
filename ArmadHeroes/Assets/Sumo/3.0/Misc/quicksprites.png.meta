@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: 90da3e919165f0341a8563e431d944d9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: red
+    21300002: blue
+    21300004: brown
+    21300006: purple
+    21300008: black
+    21300010: green
+    21300012: red_circle
+    21300014: blue_circle
+    21300016: brown_circle
+    21300018: green_circle
+    21300020: black_circle
+    21300022: purple_circle
+    21300024: ring
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: red
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 489
+        width: 103
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blue
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 489
+        width: 103
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brown
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 488
+        width: 103
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: purple
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 377
+        width: 103
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: black
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 374
+        width: 103
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: green
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 374
+        width: 103
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: red_circle
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 492
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blue_circle
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 492
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brown_circle
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 493
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: green_circle
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 385
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: black_circle
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: purple_circle
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 384
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ring
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 168
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

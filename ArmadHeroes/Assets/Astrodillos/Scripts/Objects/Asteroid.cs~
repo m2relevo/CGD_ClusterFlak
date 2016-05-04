@@ -1,0 +1,131 @@
+﻿using UnityEngine;
+using System.Collections;
+using ArmadHeroes;
+
+
+namespace Astrodillos{
+	public class Asteroid : MonoBehaviour {
+
+
+		public GameObject shadow;
+		public SpriteRenderer shadowSprite;
+		//public ParticleSystem flames;
+		public SpriteRenderer spriteRenderer;
+		public Rigidbody2D body;
+		//public AudioClip asteroidExplode;
+
+	//	Renderer particlesRenderer;
+
+
+		//When the asteroid comes on screen. Destroys when this is true but not on screen anymore
+		bool beenVisible = false;
+
+		float damage = 0.5f;
+		
+
+
+		// Use this for initialization
+		void Awake () {
+		//	particlesRenderer = flames.GetComponent<Renderer> ();
+		}
+
+		public void Spawn(Vector3 spawnPos, float speed, bool rotateClockwise, bool useGravity){
+		
+			//Reset shadow
+			shadow.SetActive (useGravity);
+
+			float angle = 0;
+
+			if (useGravity) { //Ground asteroid
+				shadowSprite.color = new Color(0,0,0,0);
+				shadow.transform.position = new Vector3 (Random.Range (-10, 10), Random.Range (-5, 2), 0);
+				Vector2 offset = shadow.transform.position - spawnPos;
+				angle = Mathf.Atan2 (offset.y, offset.x) * Mathf.Rad2Deg;
+				spriteRenderer.gameObject.layer = LayerMask.NameToLayer("Astrodillos/Sky");
+				spriteRenderer.sortingOrder = SpriteOrdering.GetOrder(shadow.transform.position.y);
+				shadowSprite.sortingOrder = spriteRenderer.sortingOrder - 2;
+			} else { //Space asteroid
+				//Use the offset from the centre to work out angle and speed
+				angle = Mathf.Atan2 (spawnPos.x, -spawnPos.y) * Mathf.Rad2Deg;
+				//Add random offset
+				angle += 90 + Random.Range (-40, 40);
+
+				spriteRenderer.gameObject.layer = LayerMask.NameToLayer("Astrodillos/Bottom");
+			}
+
+			//Set flames to behind asteroid
+//			particlesRenderer.sortingOrder = spriteRenderer.sortingOrder - 1;
+
+			//Back to radians
+			angle *= Mathf.Deg2Rad;
+
+			//Set position
+			spriteRenderer.gameObject.transform.position = spawnPos;
+
+
+			//Speed vector from angle
+			Vector2 force = new Vector2 (Mathf.Cos (angle), Mathf.Sin (angle))*speed;
+			
+			//Add the force
+			body.AddForce (force);
+			body.angularVelocity = speed*2;
+			//Rotate other direction
+			if (!rotateClockwise) {
+				body.angularVelocity *= -1;
+			}
+		}
+		
+
+		// Update is called once per frame
+		void Update () {
+			if (!beenVisible) {
+				beenVisible = spriteRenderer.isVisible;
+			} 
+			else {
+
+				if (shadow.activeSelf) {
+					shadow.transform.position = new Vector3(spriteRenderer.gameObject.transform.position.x, shadow.transform.position.y, 0);
+					float distance = Mathf.Abs(spriteRenderer.gameObject.transform.position.y - shadow.transform.position.y);
+
+					spriteRenderer.gameObject.layer = SpriteOrdering.CollsionLayerFromHeight(distance);
+
+
+					float alpha = 1/(distance*3);
+					alpha = Mathf.Min(alpha, 0.5f);
+					shadowSprite.color = new Color(0,0,0,alpha);
+
+					if(distance<0.2f){
+						Explode(shadow.transform.position);
+					}
+				}
+
+				//No longer visible
+				if(!spriteRenderer.isVisible){
+					gameObject.SetActive (false);
+				}
+			}
+		}
+
+		void OnTriggerEnter2D(Collider2D other)
+		{
+			Explode (spriteRenderer.transform.position);
+
+			if(other.gameObject.GetComponentInParent<Actor_Armad>()){
+				other.gameObject.GetComponentInParent<Actor_Armad>().TakeDamage(damage);
+			}
+			
+		}
+
+		void Explode(Vector3 position){
+
+			//Create a weapon drop
+			WeaponDropSpawner.instance.SpawnDrop (spriteRenderer.gameObject.transform.position);
+			//SoundManager.instance.PlayClip (asteroidExplode, transform.position);
+			gameObject.SetActive(false);
+			
+			Gametype_Astrodillos.instance.Explosion (position);
+
+		}
+
+	}
+}

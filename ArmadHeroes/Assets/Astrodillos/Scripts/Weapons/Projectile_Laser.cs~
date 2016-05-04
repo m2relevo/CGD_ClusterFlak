@@ -1,0 +1,72 @@
+﻿using UnityEngine;
+using System.Collections;
+
+namespace Astrodillos
+{
+    public class Projectile_Laser : Projectile
+    {
+        //LineRenderer line;
+
+
+       
+        public  Vector2 startPos;
+       public override void Awake()
+        {
+
+            
+          //  line = GetComponent<LineRenderer>();
+            base.Awake();
+          //  line.sortingLayerName = "Midground";
+          //  line.sortingOrder = 2;
+            projectileSpeed = 0.1f;
+            startPos = gameObject.transform.position;
+			body = GetComponentInChildren<Rigidbody2D>();
+			damage = 0.6f;
+        }
+
+        public override void Update()
+        {
+            base.Update();
+            Alive();
+            //Update rotation to face force direction
+            float rocketAngle = (Mathf.Rad2Deg * Mathf.Atan2(body.velocity.x, -body.velocity.y));
+            transform.localEulerAngles = new Vector3(0, 0, rocketAngle);
+          
+         //   line.SetPosition(0, gameObject.transform.position);
+         //   line.SetPosition(1, startPos);
+        }
+
+        protected override void HitObject(GameObject hitObject)
+        {
+            base.HitObject(hitObject);
+
+            Vector3 direction = hitObject.transform.position - transform.position;
+            direction.Normalize();
+            Vector3 explosionPos = transform.position + (direction * 0.25f);
+            Gametype_Astrodillos.instance.Explosion(explosionPos, hitObject);
+           
+
+
+        }
+        public override void Fire(Collider2D _ignoreCollider, Vector3 parentVel)
+        {
+            ignoreCollider = _ignoreCollider;
+            if (ignoreCollider.GetComponentInChildren<Jetpack>())
+            {
+              Collider2D ignoreChild = _ignoreCollider.GetComponentInChildren<Jetpack>().GetComponent<Collider2D>();
+            }
+			body.velocity = (transform.right * projectileSpeed) + parentVel;
+        }
+
+		public override void Alive()
+		{
+			transform.localScale += new Vector3(0,aliveTime/10,0);
+			aliveTime -= Time.deltaTime;
+			if (aliveTime <= 0)
+			{
+				Destroy(gameObject);
+			}
+		}
+
+    }
+}

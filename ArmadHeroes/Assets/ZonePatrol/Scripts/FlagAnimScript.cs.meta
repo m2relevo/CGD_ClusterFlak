@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3862451775bd8684aa809354cb23eb0f
+timeCreated: 1462344261
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - sprite1: {fileID: 21300000, guid: ee353a715baab4d409b17b167a8d8cb9, type: 3}
+  - sprite2: {fileID: 21300000, guid: 791c3dc593f70094e8503d889bda9339, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
