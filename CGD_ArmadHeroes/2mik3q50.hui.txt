@@ -1,0 +1,90 @@
+﻿Merge remote-tracking branch 'origin/master'
+
+# Conflicts:
+#	Unity/ArmadHeroes/Assets/Sumo/2.0/Scenes/Main_2.0.unity
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 2 and 11 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Behaviours/Actors/Actor.cs
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Behaviours/Actors/Players/ArmaPlayer.cs
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Behaviours/Managers/ArmaPlayerManager.cs
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Behaviours/Managers/EnemyManager.cs
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Behaviours/Managers/GameManager.cs
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Behaviours/Tower.cs
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Prefabs/WorldTile.prefab
+#	new file:   Unity/ArmadHeroes/Assets/Armatillery/Prefabs/barracks.prefab
+#	new file:   Unity/ArmadHeroes/Assets/Armatillery/Prefabs/barracks.prefab.meta
+#	new file:   Unity/ArmadHeroes/Assets/Armatillery/Prefabs/checkpoint-hut.prefab
+#	new file:   Unity/ArmadHeroes/Assets/Armatillery/Prefabs/checkpoint-hut.prefab.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Scenes/Craig.unity
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Scenes/Dan.unity
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/DynamicWallNew.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/barbedwire-diag1.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/barbedwire-diag2.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/barbedwire-end-pole.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/barbedwire-horizontal.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/barbedwire-vertical.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/barracks.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/barrier-closed-1.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/barrier-closed-2.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/bg-rock1.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/bg-rock2.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/bg-rock3.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/bg-rock5.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/bg-rock6.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/bg-veg1.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/bg-veg2.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/bg-veg3.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/bg-veg4.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/checkpoint-hut.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/flag.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/lookout.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/oil-barrell.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/oil-spill.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/road-cnr-bottom1.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/road-cnr-bottom2.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/road-cnr-top1.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/road-cnr-top2.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/road-diagonal.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/road-horizontal.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/road-vertical.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/sand.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/sandbag-1.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/sandbag-2.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/sandbag-3.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/Scene/sandbag-4.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/sandPatch.png
+#	modified:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/sandPatch.png.meta
+#	deleted:    Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/sandPatch_small.png
+#	deleted:    Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/sandPatch_small2.png
+#	new file:   Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/sandyBackground.png
+#	renamed:    Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/sandPatch_small.png.meta -> Unity/ArmadHeroes/Assets/Armatillery/Sprites/New Sprites/sandyBackground.png.meta
+#	modified:   Unity/ArmadHeroes/Assets/Astrodillos/Prefabs/EngameStatgrid+UI.prefab
+#	modified:   Unity/ArmadHeroes/Assets/Astrodillos/Scenes/Astrodillos.unity
+#	modified:   Unity/ArmadHeroes/Assets/Astrodillos/Scripts/Menus/StatDisplayControl.cs
+#	modified:   Unity/ArmadHeroes/Assets/ShellShock/Prefabs/Bullet.prefab
+#	modified:   Unity/ArmadHeroes/Assets/ShellShock/Scenes/Prototype.unity
+#	new file:   Unity/ArmadHeroes/Assets/Sumo/2.0/Scripts/RoundCollider.cs
+#	new file:   Unity/ArmadHeroes/Assets/Sumo/2.0/Scripts/RoundCollider.cs.meta
+#	modified:   Unity/ArmadHeroes/Assets/Sumo/General/Scripts/_sumo_VehicleMovementV2.cs
+#	modified:   Unity/ArmadHeroes/Assets/Sumo/General/Scripts/sumo_PlayerManager.cs
+#	deleted:    Unity/ArmadHeroes/Assets/sprites/basic-character/Thumbs.db.meta
+#	deleted:    Unity/ArmadHeroes/Assets/sprites/graphics-export/characters/Thumbs.db.meta
+#	deleted:    Unity/ArmadHeroes/Assets/sprites/graphics-export/characters/basic/Thumbs.db.meta
+#	deleted:    Unity/ArmadHeroes/Assets/sprites/graphics-export/stage/Thumbs.db.meta
+#
+
