@@ -16,7 +16,6 @@ public class TestFireProjectile : MonoBehaviour
         //creates list of enemy players and randomly picks one
         ListTarget.AddRange(GameObject.FindGameObjectsWithTag("ClusterFlak/Player"));
         int RNG = Random.Range(0, ListTarget.Count);
-        
 
         if (GameObject.FindGameObjectWithTag("ClusterFlak/Player"))
         {

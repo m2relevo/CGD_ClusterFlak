@@ -14,10 +14,6 @@ public class BossMissle : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        float spread = Random.Range(-1f, 1f);
-
-
-        
         //creates a list and randomly chooses a player from that list 
         ListTarget.AddRange(GameObject.FindGameObjectsWithTag("ClusterFlak/Player"));
         int RNG = Random.Range(0, ListTarget.Count);
@@ -25,20 +21,25 @@ public class BossMissle : MonoBehaviour
 
         GameObject Target = (GameObject)ListTarget[RNG];
         hometarget = Target;
-        transform.right = (Target.transform.position) - transform.position + (new Vector3(spread, 0f, 0f));
+        transform.right = (Target.transform.position) - transform.position;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {//code to make the missiles home in on the player
-        if (GameObject.FindGameObjectWithTag("ClusterFlak/Player"))
+        if (hometarget != null)
         {
             transform.right = hometarget.transform.position - transform.position;
 
             transform.Translate(Vector3.right * Time.deltaTime * MissileSpeed, Space.Self);
         }
 
-
+        if (hometarget == null)
+        {
+            GameObject rockdeath = (GameObject)Instantiate(rockexplosion);
+            rockdeath.transform.position = rocklocation.transform.position;
+            Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D Player)
