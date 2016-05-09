@@ -92,9 +92,11 @@ namespace ArmadHeroes
 
             MaxHP = health;
             CurrentHP = MaxHP;
+            MaxAMMO = m_weapon.GetCurrentAmmo();
+            CurrentAMMO = MaxAMMO;
             SetHealthUI();
-
-
+            SetAmmoUI();
+            
             EquipWeapon(m_machinegun);
         }
 
@@ -125,6 +127,7 @@ namespace ArmadHeroes
                 Vector3 Projectilespawn = ProjectileSpawnLoc.transform.position;
                 m_weapon.Shoot(Projectilespawn, shootDir, playerID, this, Color.blue, ActorType.Player, BulletModifier.vanilla, height);
                 accolade_shotsFired++;
+                CurrentAMMO--;
             }
             #endregion
 
@@ -171,7 +174,8 @@ namespace ArmadHeroes
 
             #endregion
 
-
+            ScoreData();
+            ScoreCanvas();
 
             switch (GameManager.instance.state)//states Ripped out of Updated Player Actor cus I dont know
             {
@@ -243,7 +247,7 @@ namespace ArmadHeroes
 
                 CurrentHP -= 10;
                 SetHealthUI();
-                accolade_timesShot+=10;
+                accolade_timesShot+=50;
                 Death();
             }
 
@@ -254,22 +258,7 @@ namespace ArmadHeroes
         {
             if (col.gameObject.tag == "ClusterFlak/WeaponPickup")
             {
-                int RNG = Random.Range(0, 3);
-
-                if (RNG == 0)
-                {
                     EquipWeapon(m_machinegun);
-                }
-
-                if (RNG == 1)
-                {
-                    EquipWeapon(m_shotgun);
-                }
-
-                if (RNG == 2)
-                {
-                    EquipWeapon(m_sniper);
-                }
             }
         }
         #endregion
@@ -303,6 +292,13 @@ namespace ArmadHeroes
             HP_Slider.value = CurrentHP;
 
             HP_FillImage.color = Color.Lerp(HP_ZeroHealthColor, HP_FullHealthColor, CurrentHP / MaxHP);
+        }
+
+        private void SetAmmoUI()
+        {
+            AMMO_Slider.value = CurrentHP;
+
+            AMMO_FillImage.color = Color.Lerp(AMMO_ZeroHealthColor, AMMO_FullHealthColor, CurrentAMMO / MaxAMMO);
         }
 
         void Death()
