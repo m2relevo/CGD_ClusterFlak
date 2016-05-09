@@ -56,7 +56,11 @@ namespace ArmadHeroes
         public Color AMMO_FullHealthColor = Color.green;
         public Color AMMO_ZeroHealthColor = Color.red;
 
-
+        //Score Manager
+        int acc_distance = 0;
+        int acc_shotFired = 0;
+        int acc_unique = 0;
+        int acc_timesShot = 0;
 
         //Modes
         bool IsAimOn = false;
@@ -101,6 +105,9 @@ namespace ArmadHeroes
         // Update is called once per frame
         void Update()
         {
+            ScoreCanvas();
+            ScoreData();
+
             #region Movement Update
             //Movement and aim by left stick and aim by right stick
             float Movex = controller.moveX.GetValue();
@@ -124,6 +131,7 @@ namespace ArmadHeroes
             {
                 Vector3 Projectilespawn = ProjectileSpawnLoc.transform.position;
                 m_weapon.Shoot(Projectilespawn, shootDir, playerID, this, Color.blue, ActorType.Player, BulletModifier.vanilla, height);
+                Debug.Log(name + " & " + playerID + ": Shotsfired =" + accolade_shotsFired + " ScoreShotsFired= " + acc_shotFired);
                 accolade_shotsFired++;
             }
             #endregion
@@ -293,7 +301,8 @@ namespace ArmadHeroes
             int acc_shotFired = (int)accolade_shotsFired;
             int acc_unique = (int)accolade_unique;
             int acc_timesShot = (int)accolade_timesShot;
-            score = (acc_distance + acc_shotFired + acc_unique) - acc_timesShot;
+
+            //score = (acc_distance + acc_shotFired + acc_unique) - acc_timesShot;
             CanvasManager.instance.setPlayerValue(playerID, score);
         }
         
