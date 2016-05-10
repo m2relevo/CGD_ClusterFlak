@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using ArmadHeroes;
 
 //Used Actor_Armad as a reference guide
 
@@ -66,6 +64,8 @@ namespace ArmadHeroes
         private float Anglex;
         private float Angley;
         public int score;
+        private Weapon Weapon;
+        public Text PlayerNum;
 
         #endregion
 
@@ -96,7 +96,7 @@ namespace ArmadHeroes
             CurrentAMMO = MaxAMMO;
             SetHealthUI();
             SetAmmoUI();
-            
+
             EquipWeapon(m_machinegun);
         }
 
@@ -121,13 +121,22 @@ namespace ArmadHeroes
 
             #endregion
 
+            if (controller.pauseButton.JustPressed())
+            {
+                Debug.Log("Pause button pressed");
+                if (ArmadHeroes_Pause.instance != null)
+                {
+                    if (m_weapon != null) { m_weapon.StopFire(); }
+                    ArmadHeroes_Pause.instance.Pause(m_controllerID);
+                }
+            }
+
             #region Firing Button events
             if (controller.shootButton.IsDown() && stickAngle != Vector2.zero && m_weapon.CheckCoolDown())//fire gun button...duh. It says shootButton. Vector2.Zero and m_weapon.CheckCoolDown taken from Player.CS/ZonePatrol
             {
                 Vector3 Projectilespawn = ProjectileSpawnLoc.transform.position;
                 m_weapon.Shoot(Projectilespawn, shootDir, playerID, this, Color.blue, ActorType.Player, BulletModifier.vanilla, height);
                 accolade_shotsFired++;
-                CurrentAMMO--;
             }
             #endregion
 
@@ -171,13 +180,9 @@ namespace ArmadHeroes
                     ArmadHeroes_Pause.instance.Pause(m_controllerID);
                 }
             }
-
             #endregion
 
-            ScoreData();
-            ScoreCanvas();
-
-            switch (GameManager.instance.state)//states Ripped out of Updated Player Actor cus I dont know
+            switch (GameManager.instance.state)
             {
                 case GameStates.game:
                     Tick();
@@ -189,6 +194,9 @@ namespace ArmadHeroes
                 default:
                     break;
             }
+
+            ScoreData();
+            ScoreCanvas();
         }
 
 
@@ -211,6 +219,7 @@ namespace ArmadHeroes
         {
             if (controller.pauseButton.JustPressed())
             {
+                Debug.Log("use state pushed");
                 if (ArmadHeroes_Pause.instance != null)
                 {
                     if (m_weapon != null) { m_weapon.StopFire(); }
@@ -245,7 +254,7 @@ namespace ArmadHeroes
             if (Enemy.gameObject.tag == "ClusterFlak/EnemyBulletMIS")
             {
 
-                CurrentHP -= 10;
+                CurrentHP -= 20;
                 SetHealthUI();
                 accolade_timesShot+=50;
                 Death();
@@ -258,7 +267,8 @@ namespace ArmadHeroes
         {
             if (col.gameObject.tag == "ClusterFlak/WeaponPickup")
             {
-                    EquipWeapon(m_machinegun);
+                EquipWeapon(null);
+                EquipWeapon(m_machinegun);
             }
         }
         #endregion
